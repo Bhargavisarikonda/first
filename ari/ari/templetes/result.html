@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #FF5722;
+        }
+        .footer {
+            background-color: #FF5722;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OmniCom</h1>
+        <h2>View-Count Visionary</h2>
+        <p>Your predicted number of views is:</p>
+        <h2 id="predicted_views">Loading...</h2>
+    </div>
+    <div class="footer">
+        <p>Contact us: 9873593560 Email: omnicom@gmail.com</p>
+    </div>
+
+    <script>
+        // Assuming the prediction result is passed in the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const predictedViews = urlParams.get('predicted_views');
+        document.getElementById('predicted_views').textContent = predictedViews ? predictedViews : 'N/A';
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View-Count Visionary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #FF5722;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #FF5722;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #FF5722;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OmniCom</h1>
+        <h2>View-Count Visionary</h2>
+        <p>Enter the details of your video below and we will predict the number of views it will receive!</p>
+        <form action="result.html" method="POST">
+            <label for="views">Number of views in video:</label>
+            <input type="number" id="views" name="views" required>
+
+            <label for="likes">Number of likes in video:</label>
+            <input type="number" id="likes" name="likes" required>
+
+            <label for="dislikes">Number of dislikes in video:</label>
+            <input type="number" id="dislikes" name="dislikes" required>
+
+            <label for="comments">Number of comments in video:</label>
+            <input type="number" id="comments" name="comments" required>
+
+            <label for="year">Year of publish:</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="duration">Duration of video (in seconds):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="category">Category of the video:</label>
+            <select id="category" name="category" required>
+                <option value="Video Testimonials">Video Testimonials</option>
+                <!-- Add other categories as needed -->
+            </select>
+
+            <button type="submit" class="button">Predict</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Contact us: 9873593560 Email: omnicom@gmail.com</p>
+    </div>
+</body>
+</html>
